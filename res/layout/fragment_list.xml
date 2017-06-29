@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+    <RelativeLayout
+        android:id="@+id/headTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:gravity="center"
+            android:text="@+string/app_name"
+            android:textColor="@color/myBlue"
+            android:textSize="18dp" />
+  
+        <ImageView
+            android:id="@+id/unNamed"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:src="@drawable/lyh" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lighterGray" >
+
+          
+                      <!-- 此处不能直接使用ListView -->   
+            <com.example.view.NoScrollListView
+                android:id="@+id/listPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/myLightGray"
+                android:dividerHeight="1px" >
+            </com.example.view.NoScrollListView>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

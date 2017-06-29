@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/dmm"
+        android:background="@drawable/my_circlewhite"/>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/headImage"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/listUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/myBlack"/>
+        <TextView
+            android:id="@+id/listUserIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="192.168.1.1"
+            android:textColor="@color/myBlack"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/listTime"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-01-01"
+            android:textColor="@color/myBlack"/>
+        
+        <com.example.view.DragIndicatorView
+                android:id="@+id/unReadcounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+         	    android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:background="@color/myRed"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/myWhite"
+                android:textSize="16sp"/>
+<!--          
+        <TextView
+            android:id="@+id/unReadcounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="11"
+            android:textColor="@color/myBlack"
+            />
+-->
+    </RelativeLayout>
+
+</RelativeLayout>

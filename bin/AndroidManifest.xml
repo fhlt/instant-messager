@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.found"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问外部存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 录制音频权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 改变WiFi多播状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!-- 改变WiFi状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 格式化可移动文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.fragment.BlankFragment"
+            android:label="@string/title_activity_blank">
+        </activity>
+        <!-- 注册设置名字活动 -->
+        <activity android:name=".SetNameActivity">
+        </activity>
+        <!-- 注册设置头像 -->
+        <activity android:name=".SetImageActivity">
+        </activity>
+        <!-- 注册聊天活动 -->
+        <activity android:name=".MainChatActivity">
+        </activity>
+    </application>
+
+</manifest>

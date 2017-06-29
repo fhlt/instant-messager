@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/myWhite"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人资料"
+            android:textColor="@color/myBlue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/head1" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/activity_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textColor="@color/myBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="IP："
+                    android:textColor="@color/myBlack"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USERNAME"
+                    android:textColor="@color/myBlue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hostIp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="192.168.1.1"
+                    android:textColor="@color/myBlack"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@drawable/my_radius_solidwhite"
+            android:text="设置头像"
+            android:textColor="@color/myBlack" />
+
+        <Button
+            android:id="@+id/setUserNameBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@drawable/my_radius_solidwhite"
+            android:text="设置昵称"
+            android:textColor="@color/myBlack" />
+    </LinearLayout>
+
+</LinearLayout>

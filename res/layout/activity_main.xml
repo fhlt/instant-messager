@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myWhite"
+    tools:context=".MainActivity">
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">   
+    </android.support.v4.view.ViewPager>
+<!--    
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.fragment.BlankFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/belowMenu">
+    </fragment>
+-->   
+    <!--分割线-->
+    <View
+        android:layout_above="@+id/belowMenu"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/myGray">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/belowMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/listMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/listImage"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/skin_tab_icon_conversation_selected"
+                android:text="Start"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/funMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/funImage"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/skin_tab_icon_plugin_normal"
+                android:text="Start"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/infoMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/infoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/skin_tab_icon_contact_normal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
